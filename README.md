@@ -1,27 +1,49 @@
 # reLaunchHer
 
-## set up dataBase
+reLaunchHer is a website created to help women transition back into the workforce by generating personalized job roles and learning paths using OpenAI's API.
 
-- create a database - relaunchher;
-- create a table - user_info;
-- add a fake user data;
-<!-- - set up environment variable
-    - run -> debug -> configuration -> Environment variables: DB_URL=jdbc:mysql://localhost:3306/yourdb;DB_USERNAME=youruser;DB_PASSWORD=yourpassword -->
-- set up application.properties file like this:
-    - spring.datasource.url=jdbc:mysql://localhost:3306/yourdb
-    - spring.datasource.username=root
-    - spring.datasource.password=yourpassword
+## Description
 
-## run the project
-- frontend
-    - npm start
-- whole project
-    - ./mvnw clean install
+This is a website created using React, Spring Boot, and MySQL. The application utilizes the OpenAI API to generate job roles based on user inputted interests and skills.
+
+## Getting Started
+
+### Dependencies
+
+* Node v22.3.0, npm 10.8.2
+
+### Executing program
+
+* How to run the program
+- Create a local database to hold users
+    create a database - relaunchher;
+    create a table - user_info;
+    add a fake user data;
+    set up application.properties file like this:
+    spring.datasource.url=jdbc:mysql://localhost:3306/yourdb
+    spring.datasource.username=root
+    spring.datasource.password=yourpassword
+- Create an OpenAI account, update API key in application.properties
+* Step-by-step bullets
+``'
+    - frontend
+        npm start
+    - whole project
+        ./mvnw clean install
+```
+
+## Authors
+
+Contributors names
+
+Shirley Xiaoxue Fang
 
 
-## result
+## Acknowledgments
 
-- frontend: http://localhost:3000/
-![Alt text](./frontend.png)
-- backend: http://localhost:8080/user/1
-![Alt text](./backend.png)
+Inspiration, code snippets, etc.
+* [awesome-readme](https://github.com/matiassingers/awesome-readme)
+* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+* [dbader](https://github.com/dbader/readme-template)
+* [zenorocha](https://gist.github.com/zenorocha/4526327)
+* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
